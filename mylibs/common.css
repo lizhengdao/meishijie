@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*初始化标签*/
+body,header,a,ul,li,a,button,h5,dl,dt,dd{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+ul{
+    list-style: none;
+}
+
+/*html5浏览器兼容新语义元素*/
+header,nav,section,article,aside,footer,figure,{
+    display: block;
+}

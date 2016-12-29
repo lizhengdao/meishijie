@@ -1,0 +1,22 @@
+head部分：
+1.设置标题前面的小图标
+<link rel="shortcut icon" href="icon.ico";>
+2.设置关键词，利于网站seo
+    <meta name="keywords" content="美食,美食网,菜谱,菜谱网,美食地图,食谱,..">
+3.设置描述，也是利于网站seo
+    <meta name="description" content="美食杰 - 中国最优质的美食，食谱，...">
+4.设置作者
+    <meta name="author" content="nongweiyi" >
+5.声明浏览器内核控制
+    <meta name="renderer" content="webkit">
+6.html5浏览器兼容新语义元素
+  header,nav,section,article,aside,footer{
+      display: block;
+  }
+7.使用颜色渐变，注意浏览器兼容
+    background: -webkit-linear-gradient(left,#D41114,#890511);
+    background: -o-linear-gradient(left,#D41114,#890511);
+    background: -moz-linear-gradient(left,#D41114,#890511);
+    background: linear-gradient(left,#D41114,#890511);
+
+

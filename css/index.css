@@ -1,0 +1,45 @@
+@charset "utf-8";
+nav,.nav-list{
+    height: 80px;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    /*-moz-box-shadow: 5px 5px 2px #E6D6B8; /!* 老的 Firefox *!/*/
+    /*box-shadow: 5px 5px 2px #E6D6B8;*/
+    /*margin-bottom: 10px;*/
+}
+.nav-list{
+    text-align: center;
+    line-height: 80px;
+}
+.nav-list li{
+    float: left;
+    height: 80px;
+    padding: 0 20px;
+}
+.nav-list a{
+    display: inline-block;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444453;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-list .active>a{
+    border-bottom: 4px solid red;
+}
+.nav-list li:hover {
+    background-color: #FAFAFA;
+
+}
+.stretch{
+    display: none;
+    float: left;
+    width: 990px;
+    height: 200px;
+    background-color: #122b40;
+}
