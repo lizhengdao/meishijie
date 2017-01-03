@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*初始化标签*/
-body,header,a,ul,li,a,button,h5,dl,dt,dd{
+body,header,a,ul,li,a,button,h5,h3,dl,dt,dd,section,footer,header,nav,span,img,p,strong{
     padding: 0;
     margin: 0;
 }

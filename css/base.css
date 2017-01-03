@@ -1,4 +1,9 @@
 @charset "utf-8";
+body{
+    background: #FAE8C8;
+    overflow-x:hidden;
+    text-align: center;
+}
 /*header*/
 header, .header-container, .search, .logo, .login-list {
     height: 130px;
@@ -169,6 +174,9 @@ footer {
     background: url("../images/base/footerlinks.png") 105px 0;
 
 }
+.footer-con1{
+    text-align: left;
+}
 .footer-con2{
     height: 150px;
 
@@ -227,4 +235,132 @@ margin: 0 auto;
 .footer-con3 p{
     text-align: center;
     color: #7a7a7a;
+}
+
+/*nav*/
+nav,.nav-list{
+    height: 80px;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    -moz-box-shadow: 5px 5px 2px #E6D6B8; /* 老的 Firefox */
+    box-shadow: 5px 5px 2px #E6D6B8;
+    margin-bottom: 10px;
+}
+.nav-list{
+    text-align: center;
+    line-height: 80px;
+}
+.nav-list li{
+    float: left;
+    height: 80px;
+    padding: 0 20px;
+}
+.nav-list>li>a{
+    display: inline-block;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444453;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+.nav-list .caret{
+    position: absolute;
+    right: -10px;
+    top: 38px;
+}
+.nav-list .active>a{
+    border-bottom: 4px solid red;
+}
+.nav-list li:hover {
+    background-color: #FAFAFA;
+
+}
+.food span{
+    display: inline-block;
+    height: 23px;
+    width: 24px;
+    background: url("../images/base/furniture.png") no-repeat;
+    position: absolute;
+    top: 10px;
+    right: -12px;
+}
+nav .center{
+    position: relative;
+}
+.stretch{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    float: left;
+    width: 990px;
+    height: 280px;
+    background-color: #FAFAFA;
+    z-index: 100;
+    text-align: left;
+}
+.stretch dl{
+    margin: 20px 20px 0 20px;
+
+}
+.stretch dt{
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+
+}
+.stretch dt a{
+    color: #D31316;
+}
+.stretch dd{
+    float: left;
+
+}
+.stretch a{
+    color: gray;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.stretch a:hover{
+    background-color: red;
+    color: white;
+
+}
+
+.stretch .left{
+    width: auto;
+    float: left;
+}
+.stretch .right{
+    width: auto;
+    float: left;
+}
+#nav-menu .stretch{
+    display: none;
+}
+#health .stretch{
+    display: none;
+}
+.stretch-img{
+    position: absolute;
+    bottom: -40px;
+    right: -100px;
+}
+#nav-menu .stretch-img{
+    height: 226px;
+    width: 406px;
+    background: url("../images/base/jccp_navbgg.png");
+}
+#nav-health .stretch-img{
+    height: 208px;
+    width: 325px;
+    background: url("../images/base/ysjk_navbg.png");
 }

@@ -1,45 +1,373 @@
 @charset "utf-8";
-nav,.nav-list{
-    height: 80px;
-}
-nav{
-    height: 80px;
+/*recommend*/
+article {
+    text-align: center;
     width: 100%;
-    background-color: white;
-    /*-moz-box-shadow: 5px 5px 2px #E6D6B8; /!* 老的 Firefox *!/*/
-    /*box-shadow: 5px 5px 2px #E6D6B8;*/
-    /*margin-bottom: 10px;*/
 }
-.nav-list{
+
+.recommend h3, .title-h3 {
+    margin: 45px auto;
+}
+
+.recommend-con {
+    /*background-color: #122b40;*/
+    /*width: 4950px;*/
     text-align: center;
-    line-height: 80px;
-}
-.nav-list li{
-    float: left;
-    height: 80px;
-    padding: 0 20px;
-}
-.nav-list a{
-    display: inline-block;
-    height: 80px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #444453;
-    line-height: 80px;
-    text-align: center;
-    text-decoration: none;
-}
-.nav-list .active>a{
-    border-bottom: 4px solid red;
-}
-.nav-list li:hover {
-    background-color: #FAFAFA;
+    /*margin: 0 auto;*/
+    overflow: hidden;
 
 }
-.stretch{
-    display: none;
+
+.recommend-con ul li {
+    height: 330px;
+    width: 330px;
+    background-color: #101010;
+    display: inline-block;
     float: left;
+}
+
+.recommend-con .recon-img-link {
+    display: inline-block;
+    height: 330px;
+    width: 330px;
+
+}
+
+.recommend-con figure {
+    position: relative;
+
+}
+
+.recommend-con figcaption {
+    padding: 10px;
+    text-align: left;
+    height: 75px;
+    width: 330px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/index/white80.png") repeat;
+}
+
+.recommend-con figcaption > a ,.raiers-con-item figcaption>a{
+    font-size: 22px;
+    color: #231f1a;
+}
+.recommend-con figcaption > a:hover ,.raiers-con-item figcaption>a:hover{
+    color: red;
+}
+
+.recommend-con figcaption span {
+    display: inline-block;
+    height: 32px;
+    width: 52px;
+    background-color: #60A531;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    opacity: 1;
+}
+
+.sm-link, .sm-link:hover {
+    color: white;
+}
+
+.recommend-con .sm-pic {
+    position: absolute;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: url("../images/index/gxarrow1.png") no-repeat;
+    top: 0;
+    right: -6px;
+}
+
+.recommend-con .con-item {
+    /*background-color: #2b542c;*/
+    /*float: left;*/
     width: 990px;
-    height: 200px;
-    background-color: #122b40;
+    text-align: center;
+}
+
+.recommend-con ul {
+    overflow: hidden;
+    width: 990px;
+    /*text-overflow:ellipsis;*/
+}
+
+.recommend-con li {
+    /*text-overflow:ellipsis;*/
+}
+
+.scale {
+
+    height: 52px;
+    width: 100%;
+    background: url("../images/index/kedulong.gif") repeat-x;
+
+}
+
+/*raiers*/
+.raiers-con {
+    position: relative;
+}
+
+.title-h3 {
+    position: relative;
+}
+
+.title-h3 > h3 {
+    display: inline-block;
+
+}
+
+.title-h3 > a {
+    color: gray;
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+}
+
+.title-h3 > a:hover {
+    color: red;
+}
+
+.raiers-img-link img ,.raiers-img-link{
+    height: 210px;
+    width: 316px;
+}
+.raiers-img-link{
+    position: relative;
+    background-color: #2b542c;
+    display: inline-block;
+}
+.raiers-img-link > span {
+    display: inline-block;
+    width: 316px;
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/index/ztfixer.gif") no-repeat;
+}
+.raiers-con-item{
+    text-align: center;
+}
+.raiers-con-item li{
+    width: 316px;
+    float: left;
+    margin: 7px;
+}
+
+
+.raiers-con-item figcaption{
+    background-color: white;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+}
+.raiders_index span{
+    display: inline-block;
+    width: 35px;
+    height: 5px;
+
+    border-radius: 2px;
+}
+
+.btn_pre,.btn_next{
+    height: 130px;
+    width: 130px;
+    background-color: #2b542c;
+    position: absolute;
+    top: 50%;
+    margin-top: -65px;
+
+}
+.btn_pre{
+    left: -130px;
+    background: url("../images/index/index_arrow.gif") 0px 0px no-repeat;
+}
+.btn_pre:hover{
+    background: url("../images/index/index_arrow.gif") -130px 0px no-repeat;
+}
+.btn_next{
+    right: -130px;
+    background: url("../images/index/index_arrow.gif")  0px -130px no-repeat;
+}
+.btn_next:hover{
+    background: url("../images/index/index_arrow.gif")  -130px -130px no-repeat;
+
+}
+/*ingredients 食材*/
+.ingredients-con{
+    /*height:190px ;*/
+    background-color: white;
+    padding: 15px 20px;
+}
+.ingredients-con .type-links{
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+.ingredients-con .type-links a{
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    text-decoration: none;
+    color: gray;
+    line-height: 30px;
+    font-size: 14px;
+
+}
+.ingredients-con .type-links a:hover{
+    background-color: #FF3232;
+    color: white;
+    cursor: pointer;
+}
+
+.ingredients-con-list li{
+    float: left;
+    width: 118px;
+    text-align: center;
+    display: inline-block;
+}
+.ingredients-con-list img,.ingredients-con-list figure{
+    height: 118px;
+    width: 115px;
+}
+.ingredients-con-list figure{
+    position: relative;
+    display: inline-block;
+
+}
+.ingredients-con-list figcaption{
+    display: inline-block;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    background:url("../images/index/white70.png") repeat;
+    width: 118px;
+    line-height: 28px;
+    left: 0;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+.ingredients-con-list em{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #999;
+}
+.ingredients-con-list .sm-link{
+    color: #3b3b3b;
+    padding-left: 10px;
+}
+.ingredients-con-list .sm-link:hover{
+    color: red;
+}
+/*cookbook*/
+.cookbook-con{
+    position: relative;
+}
+.cookbook_con-item {
+    text-align: center;
+}
+.cookbook_con-item li{
+    width: 244.5px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    padding-bottom: 15px;
+
+}
+.cookbook_con-item figure{
+    width: 232px;
+}
+.cookbook_con-item figcaption{
+    overflow: hidden;
+    background-color: white;
+    height: 100px;
+    width: 232px;
+}
+.toggle-up,.toggle-down{
+    height: 100px;
+    padding: 20px;
+    text-align: left;
+    width: 232px;
+}
+
+.toggle-down{
+    background-color: #EEEEEE;
+}
+.cookbook_con-item figcaption strong{
+    font-size: 16px;
+}
+.cookbook_con-item figcaption p{
+    margin: 5px 0;
+}
+.cookbook_con-item figcaption p,.cookbook_con-item figcaption span{
+    color: gray;
+    font-size: 14px;
+}
+.cookbook_con-item .respan{
+    color: red;
+}
+.cookbook dl{
+    font-size: 14px;
+    text-align: left;
+    background-color: white;
+    height: 332px;
+    width: 232px;
+}
+.cookbook dd{
+    padding: 15px 0 0 15px;
+    float: left;
+}
+.cookbook dd a{
+    display: inline-block;
+    color: gray;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #bababa;
+    text-decoration: none;
+}
+.cookbook dd:last-child a{
+    background-color: red;
+    color: white;
+}
+.cookbook dd a:hover{
+    background-color: #E90808;
+    color: white;
+}
+.cookbook dt{
+    border-bottom: 1px solid #bababa;
+    padding: 15px;
+}
+/*news*/
+.news_con .div1{
+    height: 232px;
+    width: 486px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.news_con .div1 .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 232px;
+    width: 232px;
+    float: left;
+
+
+}
+.news_con .div1 h3{
+    font-size: 14px;
+    font-weight: normal;
+    float: right;
+    width: 240px;
+    text-align: left;
 }
