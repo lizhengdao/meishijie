@@ -19,4 +19,33 @@ head部分：
     background: -moz-linear-gradient(left,#D41114,#890511);
     background: linear-gradient(left,#D41114,#890511);
 
+8.设置页面不出现滚动条，垂直的滚动条为overflow-y:hidden
+    body{
+        background: #FAE8C8;
+        overflow-x:hidden
+    }
+
+9.选择一个类选择器中的指定下标的一个元素
+     var $raiersConList=$(".raiers-con-item");
+     $raiersConList.eq(0).show();
+     $raiersConList.eq(1).hide()
+     $raiersConList.eq(2).hide();
+
+9.获取当前是哪个li被点击的下标：
+    var $typesLink = $(".type-links a");
+    index=$typesLink.index(this);
+
+
+
+项目背景：有天想要找菜谱看到这个网站觉得不错所有就仿了主页。实现方式可能跟他
+原来实现的不一样，但是效果是一样。
+
+
+
+
+
+
+
+
+
 

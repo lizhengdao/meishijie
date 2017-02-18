@@ -1,24 +1,65 @@
 @charset "utf-8";
 /*recommend*/
+
 article {
     text-align: center;
     width: 100%;
 }
 
-.recommend h3, .title-h3 {
+.title-h3 {
     margin: 45px auto;
 }
 
-.recommend-con {
-    /*background-color: #122b40;*/
-    /*width: 4950px;*/
-    text-align: center;
+.recommend .con-item-title{
+    height: 116px;
+    width: 100%;
+    line-height: 116px;
+}
+.recommend .con-item-title h3{
+    display: none;
+    line-height: 116px;
+    height: 116px;
+}
+.recommend {
+
+    width: 990px;
     /*margin: 0 auto;*/
-    overflow: hidden;
+    position: relative;
+    height: 446px;
+    text-align: center;
+    /*overflow: hidden;*/
+    margin:  0 auto 100px auto;
 
 }
 
-.recommend-con ul li {
+.recommend-con {
+    position: absolute;
+    top: 0;
+    left:50%;
+    margin-left: -2475px;
+    width: 4950px;
+    text-align: center;
+    height: 460px;
+
+
+
+
+}
+.recommend-con-main{
+    /*position: absolute;*/
+    width: 4950px;
+    height: 100%;
+    margin: 0 auto;
+
+
+}
+.outer{
+    width: 2970px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recommend-con .con-list li {
     height: 330px;
     width: 330px;
     background-color: #101010;
@@ -30,8 +71,12 @@ article {
     display: inline-block;
     height: 330px;
     width: 330px;
-
 }
+.recon-img-link img{
+    height: 100%;
+    width: 100%;
+}
+
 
 .recommend-con figure {
     position: relative;
@@ -49,11 +94,12 @@ article {
     background: url("../images/index/white80.png") repeat;
 }
 
-.recommend-con figcaption > a ,.raiers-con-item figcaption>a{
+.recommend-con figcaption > a, .raiers-con-item figcaption > a {
     font-size: 22px;
     color: #231f1a;
 }
-.recommend-con figcaption > a:hover ,.raiers-con-item figcaption>a:hover{
+
+.recommend-con figcaption > a:hover, .raiers-con-item figcaption > a:hover {
     color: red;
 }
 
@@ -85,33 +131,167 @@ article {
 }
 
 .recommend-con .con-item {
-    /*background-color: #2b542c;*/
-    /*float: left;*/
+    min-width: 990px;
     width: 990px;
     text-align: center;
+    float: left;
 }
 
-.recommend-con ul {
-    overflow: hidden;
-    width: 990px;
-    /*text-overflow:ellipsis;*/
+/*.mark*/
+.top-mark {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1485px;
+    height: 330px;
+    width: 2970px;
+    z-index: 100;
+
 }
 
-.recommend-con li {
-    /*text-overflow:ellipsis;*/
+.top-mark .mark-c {
+    width: 33.333%;
+    height: 330px;
+}
+
+.top-mark .left, .top-mark .right {
+    background: rgba(255, 255, 255, 0.7);
+
+}
+
+.top-mark .middle {
+    background: transparent;
+    position: relative;
 }
 
 .scale {
-
-    height: 52px;
+    position: absolute;
+    height: 55px;
     width: 100%;
+    bottom: -53px;
+    background: white;
+    opacity: 0.8;
+
+}
+
+.scale .index {
+    width: 100%;
+    height: 3px;
+}
+
+.scale .index li {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 3px;
+    background: gray;
+}
+
+.ruler {
+    width: 100%;
+    height: 50px;
     background: url("../images/index/kedulong.gif") repeat-x;
 
 }
 
+.ruler-b {
+    width: 33.33%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.ruler .l {
+    text-align: right;
+}
+
+.ruler .m {
+
+}
+
+.ruler .r {
+
+    text-align: left;
+}
+
+.time-list {
+    width: 100%;
+    height: 50px;
+}
+
+.time-list li {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+
+
+}
+.time-list span{
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+
+}
+.time-list .l{
+    text-align: left;
+
+
+}
+.time-list .r{
+    text-align: right;
+}
+
+/*time-prompt 刻度时间提示*/
+.time-prompt{
+    height: 53px;
+    width: 990px;
+    position: absolute;
+    top: 0;
+}
+.time-prompt li{
+    height: 53px;
+    width: 198px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    color: red;
+
+}
+.time-prompt li span{
+    display: none;
+}
+/*recommend btn*/
+.recommend .rec-btn{
+    height: 73px;
+    width: 173px;
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    background: url("../images/index/zzw_bg.png") ;
+    /*cursor: pointer;*/
+    display: none;
+    /*background: red;*/
+
+}
+.recommend .rec-btn-prev{
+    left: -60px;
+    background-position:  0 -68px;
+
+
+}
+.recommend .rec-btn-next{
+    right: -60px;
+    background-position:  -175px -68px;
+
+}
+
 /*raiers*/
-.raiers-con {
+.con-outer {
     position: relative;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .title-h3 {
@@ -135,15 +315,17 @@ article {
     color: red;
 }
 
-.raiers-img-link img ,.raiers-img-link{
+.raiers-img-link img, .raiers-img-link {
     height: 210px;
     width: 316px;
 }
-.raiers-img-link{
+
+.raiers-img-link {
     position: relative;
     background-color: #2b542c;
     display: inline-block;
 }
+
 .raiers-img-link > span {
     display: inline-block;
     width: 316px;
@@ -153,30 +335,60 @@ article {
     left: 0px;
     background: url("../images/index/ztfixer.gif") no-repeat;
 }
-.raiers-con-item{
+
+.raiers-con-item {
     text-align: center;
+    float: left;
+    width: 990px;
 }
-.raiers-con-item li{
+
+.raiers-con-item li {
     width: 316px;
     float: left;
     margin: 7px;
 }
+.con-box{
+    width: 2970px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1485px;
 
+}
+.con-inner{
+    width: 2970px;
+    margin: 0 auto;
+}
+.con-middle{
 
-.raiers-con-item figcaption{
+    width: 990px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -495px;
+    overflow: hidden;
+}
+.raiders .con-box,.raiders .con-middle,.raiders .con-inner{
+    height: 600px;
+}
+.cookbook .con-box,.cookbook .con-middle,.cookbook .con-inner{
+    height: 800px;
+}
+
+.raiers-con-item figcaption {
     background-color: white;
     padding: 5px 10px 10px 10px;
     text-align: left;
 }
-.raiders_index span{
+
+.raiders_index span {
     display: inline-block;
     width: 35px;
     height: 5px;
-
     border-radius: 2px;
 }
 
-.btn_pre,.btn_next{
+.btn_pre, .btn_next {
     height: 130px;
     width: 130px;
     background-color: #2b542c;
@@ -185,33 +397,40 @@ article {
     margin-top: -65px;
 
 }
-.btn_pre{
+
+.btn_pre {
     left: -130px;
     background: url("../images/index/index_arrow.gif") 0px 0px no-repeat;
 }
-.btn_pre:hover{
+
+.btn_pre:hover {
     background: url("../images/index/index_arrow.gif") -130px 0px no-repeat;
 }
-.btn_next{
+
+.btn_next {
     right: -130px;
-    background: url("../images/index/index_arrow.gif")  0px -130px no-repeat;
+    background: url("../images/index/index_arrow.gif") 0px -130px no-repeat;
 }
-.btn_next:hover{
-    background: url("../images/index/index_arrow.gif")  -130px -130px no-repeat;
+
+.btn_next:hover {
+    background: url("../images/index/index_arrow.gif") -130px -130px no-repeat;
 
 }
+
 /*ingredients 食材*/
-.ingredients-con{
+.ingredients-con {
     /*height:190px ;*/
     background-color: white;
     padding: 15px 20px;
 }
-.ingredients-con .type-links{
+
+.ingredients-con .type-links {
     text-align: center;
     padding-bottom: 15px;
 
 }
-.ingredients-con .type-links a{
+
+.ingredients-con .type-links a {
     display: inline-block;
     width: 55px;
     height: 30px;
@@ -221,112 +440,141 @@ article {
     font-size: 14px;
 
 }
-.ingredients-con .type-links a:hover{
-    background-color: #FF3232;
-    color: white;
-    cursor: pointer;
-}
 
-.ingredients-con-list li{
+
+.ingredients-con-list li {
     float: left;
     width: 118px;
     text-align: center;
     display: inline-block;
 }
-.ingredients-con-list img,.ingredients-con-list figure{
+
+.ingredients-con-list img, .ingredients-con-list figure {
     height: 118px;
     width: 115px;
 }
-.ingredients-con-list figure{
+
+.ingredients-con-list figure {
     position: relative;
     display: inline-block;
 
 }
-.ingredients-con-list figcaption{
+
+.ingredients-con-list figcaption {
     display: inline-block;
     height: 28px;
     position: absolute;
     bottom: 0;
-    background:url("../images/index/white70.png") repeat;
+    background: url("../images/index/white70.png") repeat;
     width: 118px;
     line-height: 28px;
     left: 0;
     text-align: left;
     padding-left: 10px;
-    
+
 }
-.ingredients-con-list em{
+
+.ingredients-con-list em {
     display: inline-block;
     height: 10px;
     width: 10px;
     background-color: #999;
 }
-.ingredients-con-list .sm-link{
+
+.ingredients-con-list .sm-link {
     color: #3b3b3b;
     padding-left: 10px;
 }
-.ingredients-con-list .sm-link:hover{
+
+.ingredients-con-list .sm-link:hover {
     color: red;
 }
-/*cookbook*/
-.cookbook-con{
-    position: relative;
+
+/*cookbook---菜谱*/
+.cookbook{
+    margin: 45px 0;
 }
+
+.cookbook-con {
+    position: relative;
+    height: 800px;
+}
+
 .cookbook_con-item {
     text-align: center;
+    float: left;
+    width: 990px;
 }
-.cookbook_con-item li{
-    width: 244.5px;
+
+.cookbook_con-item li {
+    width: 247.5px;
+    padding: 10px;
     display: inline-block;
     text-align: center;
     float: left;
-    padding-bottom: 15px;
+
+    box-sizing: border-box;
 
 }
-.cookbook_con-item figure{
-    width: 232px;
+
+.cookbook_con-item figure {
+    width: 100%;
 }
-.cookbook_con-item figcaption{
+
+.cookbook_con-item figcaption {
     overflow: hidden;
     background-color: white;
     height: 100px;
-    width: 232px;
-}
-.toggle-up,.toggle-down{
-    height: 100px;
-    padding: 20px;
-    text-align: left;
-    width: 232px;
+    width: 100%;
 }
 
-.toggle-down{
+.toggle-up, .toggle-down {
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+}
+
+.toggle-down {
     background-color: #EEEEEE;
 }
-.cookbook_con-item figcaption strong{
+
+.cookbook_con-item figcaption strong {
     font-size: 16px;
 }
-.cookbook_con-item figcaption p{
+
+.cookbook_con-item figcaption p {
     margin: 5px 0;
 }
-.cookbook_con-item figcaption p,.cookbook_con-item figcaption span{
+
+.cookbook_con-item figcaption p, .cookbook_con-item figcaption span {
     color: gray;
     font-size: 14px;
 }
-.cookbook_con-item .respan{
+
+.cookbook_con-item .respan {
     color: red;
 }
-.cookbook dl{
+
+.cookbook dl {
     font-size: 14px;
     text-align: left;
     background-color: white;
     height: 332px;
-    width: 232px;
+    width: 100%;
 }
-.cookbook dd{
+
+.cookbook dd {
     padding: 15px 0 0 15px;
     float: left;
 }
-.cookbook dd a{
+.cookbook-img-link img{
+    height: 100%;
+    width: 100%;
+}
+
+.cookbook dd a {
     display: inline-block;
     color: gray;
     padding: 5px;
@@ -334,40 +582,19 @@ article {
     border: 1px solid #bababa;
     text-decoration: none;
 }
-.cookbook dd:last-child a{
+
+.cookbook dd:last-child a {
     background-color: red;
     color: white;
 }
-.cookbook dd a:hover{
+
+.cookbook dd a:hover {
     background-color: #E90808;
     color: white;
 }
-.cookbook dt{
+
+.cookbook dt {
     border-bottom: 1px solid #bababa;
     padding: 15px;
 }
-/*news*/
-.news_con .div1{
-    height: 232px;
-    width: 486px;
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-}
-.news_con .div1 .img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 232px;
-    width: 232px;
-    float: left;
 
-
-}
-.news_con .div1 h3{
-    font-size: 14px;
-    font-weight: normal;
-    float: right;
-    width: 240px;
-    text-align: left;
-}

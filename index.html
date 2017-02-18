@@ -8,6 +8,7 @@
     <meta name="description"
           content="美食杰 - 中国最优质的美食，食谱，菜谱网。做你最喜爱的美食网，菜谱网。提供最人性化的菜谱大全,食谱家常菜，家常菜谱大全的美食网,让人们在宣泄的都市中体验在家常做菜,享受美食的乐趣.找家常菜谱,上美食杰菜谱美食网">
     <meta name="author" content="nongweiyi">
+    <meta name="viewport" content="width:device-width">
     <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="mylibs/common.css">
     <link rel="stylesheet" href="css/base.css">
@@ -49,7 +50,7 @@
 </header>
 <nav>
     <div class="center ">
-        <ul class="nav-list">
+        <ul class="nav-list clearfix">
             <li class="active"><a href="#">首页</a></li>
             <li id="nav-menu"><a href="#">菜谱大全<span class="caret"></span></a>
 
@@ -204,357 +205,605 @@
     </div>
 </nav>
 <article class="recommend clearfix">
+    <div class="top-mark clearfix">
+        <div class="pull-left mark-c left"></div>
+        <div class="pull-left mark-c middle ">
+            <div class="rec-btn rec-btn-prev"></div>
+            <div class="rec-btn rec-btn-next"></div>
+        </div>
+        <div class="pull-left mark-c right"></div>
+        <div class="scale ">
+            <ul class="index clearfix">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="ruler clearfix">
+                <div class="pull-left ruler-b l">4</div>
+                <div class="pull-left ruler-b m">
+                    <ul class="clearfix time-list">
+                        <li class="clearfix"><span class="l">:00</span><span class="r">10</span></li>
+                        <li class="clearfix"><span class="l">:00</span><span class="r">14</span></li>
+                        <li class="clearfix"><span class="l">:00</span><span class="r">16</span></li>
+                        <li class="clearfix"><span class="l">:00</span><span class="r">21</span></li>
+                        <li class="clearfix"><span class="l">:00</span><span class="r">4</span></li>
+                    </ul>
+                    <ul class="clearfix time-prompt">
+                        <li><span>早餐时间</span></li>
+                        <li><span>午餐时间</span></li>
+                        <li><span>下午茶时间</span></li>
+                        <li><span>晚餐时间</span></li>
+                        <li><span>夜宵时间</span></li>
+                    </ul>
+                </div>
+                <div class="pull-left ruler-b r">:00</div>
+
+            </div>
+
+        </div>
+    </div>
+
     <div class="recommend-con clearfix">
-        <div class="con-item clearfix center">
-            <h3>今日夜宵推荐：趣味夜生活怎能少了它们</h3>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="recon-img-link" href="#">
-                            <img src="images/index/recon_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <a href="#">鸡米花</a>
+        <div class="outer">
+            <div class="recommend-con-main clearfix">
 
-                            <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
-                                <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="recon-img-link" href="#">
-                            <img src="images/index/recon_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <a href="#">鸡米花</a>
+                <div class="con-item clearfix center">
+                    <div class="con-item-title">
+                        <h3>今日早餐推荐：今日雨水，春风送暖</h3>
+                    </div>
+                    <ul class="con-list">
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/breakfast01.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
 
-                            <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
-                                <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="recon-img-link" href="#">
-                            <img src="images/index/recon_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <a href="#">鸡米花</a>
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/breakfast02.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
 
-                            <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
-                                <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
-                        </figcaption>
-                    </figure>
-                </li>
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/breakfast03.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
 
-            </ul>
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="con-item clearfix center">
+                    <div class="con-item-title">
+                        <h3>今日午餐推荐：下饭菜主打周末午餐</h3>
+                    </div>
+                    <ul class="con-list">
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/lunch01.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/lunch02.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/lunch03.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="con-item clearfix center">
+                    <div class="con-item-title">
+                        <h3>今日下午茶推荐：春季里的养生下午茶</h3>
+                    </div>
+                    <ul class="con-list">
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/after01.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/after02.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/after03.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="con-item clearfix center">
+                    <div class="con-item-title">
+                        <h3>今日晚餐推荐：尝鲜无不道春笋</h3>
+                    </div>
+
+                    <ul class="con-list">
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/dinner01.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/dinner02.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/dinner03.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="con-item clearfix center">
+                    <div class="con-item-title">
+                        <h3>今日夜宵推荐：健康版夜宵为健康护航</h3>
+                    </div>
+                    <ul class="con-list">
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/supper01.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/supper02.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a class="recon-img-link" href="#">
+                                    <img src="images/recom/supper03.jpg" alt="鸡米花"/>
+                                </a>
+                                <figcaption>
+                                    <a href="#">鸡米花</a>
+
+                                    <p>无需油炸，就能吃到酥脆鲜嫩的诱人鸡米花
+                                        <span><a class="sm-link" href="#">解馋</a><em class="sm-pic"></em></span>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
         </div>
     </div>
-    <div class="scale">
-    </div>
+
+
 </article>
-<article class="raiders">
-    <div class="center raiers-con">
-        <div class="raiers-con-item ">
-            <section class="title-h3">
-                <h3>12月，寒冬藏肾气</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做 1</a>
+<article class="raiders clearfix">
+    <section class="title-h3 center clearfix">
+        <h3>2月，冬去春来要养阳</h3><a href="#">更多菜单></a>
+    </section>
+    <div class="center con-outer">
+        <div class="con-middle">
+            <div class="con-box ">
+                <div class="con-inner clearfix">
+                    <div class="raiers-con-item ">
 
-                            <p>鼻子都香掉</p>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_1.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做 1</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
+                                        <p>鼻子都香掉</p>
 
-                            <p>鼻子都香掉</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_2.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
+                                        <p>鼻子都香掉</p>
 
-                            <p>鼻子都香掉</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_3.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
+                                        <p>鼻子都香掉</p>
 
-                            <p>鼻子都香掉</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_4.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
+                                        <p>鼻子都香掉</p>
 
-                            <p>鼻子都香掉</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_5.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
+                                        <p>鼻子都香掉</p>
 
-                            <p>鼻子都香掉</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_1_6.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
 
-                        </figcaption>
-                    </figure>
-                </li>
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
 
 
-            </ul>
+                        </ul>
 
+                    </div>
+                    <div class="raiers-con-item ">
+
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_1.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做 2</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_2.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_3.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_4.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_5.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_2_6.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="raiers-con-item ">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_1.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做 3</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_2.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_3.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_4.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_5.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="raiers-img-link" href="#">
+                                        <img src="images/raiders/raiders_3_6.jpg" alt="鸡米花"/>
+                                        <span></span>
+                                    </a>
+                                    <figcaption>
+                                        <a href="#">猪肉这么做</a>
+
+                                        <p>鼻子都香掉</p>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="raiers-con-item ">
-            <section class="title-h3">
-                <h3>12月，寒冬藏肾气</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_2.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做 2</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_2.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_2.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
 
 
-            </ul>
-
-        </div>
-        <div class="raiers-con-item ">
-            <section class="title-h3">
-                <h3>12月，寒冬藏肾气</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_3.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做 3</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_3.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_3.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="raiers-img-link" href="#">
-                            <img src="images/index/raiers_1.jpg" alt="鸡米花"/>
-                            <span></span>
-                        </a>
-                        <figcaption>
-                            <a href="#">猪肉这么做</a>
-
-                            <p>鼻子都香掉</p>
-
-                        </figcaption>
-                    </figure>
-                </li>
-
-
-            </ul>
-
-        </div>
-        <div class="raiders_index">
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </div>
         <div class="btn_pre raiers_btn_pre">
 
         </div>
-        <div class="btn_next raiers_btn_pre">
+        <div class="btn_next raiers_btn_next">
         </div>
+
+    </div>
+    <div class="raiders_index">
+        <span></span>
+        <span></span>
+        <span></span>
 
     </div>
 
 </article>
-<article class="ingredients">
-    <div class="center ">
+<article class="ingredients clearfix">
+    <div class="center clearfix">
         <section class="title-h3">
             <h3>1月，养胃进补时</h3><a href="#">更多食材></a>
         </section>
@@ -572,7 +821,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_2.jpg" alt=""/>
+                                <img src="images/ingredients/fruits1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -583,7 +832,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/fruits2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -594,7 +843,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/fruits3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -605,7 +854,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/fruits4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -616,7 +865,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/fruits5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -627,7 +876,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_2.jpg" alt=""/>
+                                <img src="images/ingredients/fruits6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -638,7 +887,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_2.jpg" alt=""/>
+                                <img src="images/ingredients/fruits7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -662,7 +911,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -673,7 +922,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -684,7 +933,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -695,7 +944,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -706,7 +955,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -717,7 +966,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -728,7 +977,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -739,97 +988,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_3.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/veg8.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -842,7 +1001,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_4.jpg" alt=""/>
+                                <img src="images/ingredients/grain1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -853,7 +1012,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -864,7 +1023,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -875,7 +1034,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -886,7 +1045,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -897,7 +1056,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -908,7 +1067,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -919,7 +1078,97 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_1.jpg" alt=""/>
+                                <img src="images/ingredients/grain8.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh1.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh2.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh3.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh4.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh5.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh6.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh7.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="images/ingredients/fresh8.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -934,557 +1183,648 @@
     </div>
 
 </article>
-<article class="cookbook">
+<article class="cookbook clearfix">
     <div class="center cookbook-con clearfix">
-        <div class="cookbook_con-item clearfix">
-            <section class="title-h3">
-                <h3>一周热门菜谱推荐</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳1</strong>
+        <div class="con-middle">
+            <div class="con-box ">
+                <div class="con-inner clearfix">
+                    <div class="cookbook_con-item clearfix">
+                        <section class="title-h3">
+                            <h3>最新菜谱</h3>
+                        </section>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_1.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳1</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_2.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_3.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_4.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_5.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_6.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_1.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_1_7.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
 
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>热门栏目推荐</dt>
-                        <dd><a href="">最新菜谱</a></dd>
-                        <dd><a href="">家常菜</a></dd>
-                        <dd><a href="">凉菜</a></dd>
-                        <dd><a href="">素食</a></dd>
-                        <dd><a href="">早餐</a></dd>
-                        <dd><a href="">乌发</a></dd>
-                        <dd><a href="">高血压</a></dd>
-                        <dd><a href="">烘焙</a></dd>
-                        <dd><a href="">韩国料理</a></dd>
-                        <dd><a href="">川菜</a></dd>
-                        <dd><a href="">粤菜</a></dd>
-                        <dd><a href="">湘菜</a></dd>
-                        <dd><a href="">甜点</a></dd>
-                        <dd><a href="">进入菜谱大全 >></a></dd>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>热门栏目推荐</dt>
+                                    <dd><a href="">最新菜谱</a></dd>
+                                    <dd><a href="">家常菜</a></dd>
+                                    <dd><a href="">凉菜</a></dd>
+                                    <dd><a href="">素食</a></dd>
+                                    <dd><a href="">早餐</a></dd>
+                                    <dd><a href="">乌发</a></dd>
+                                    <dd><a href="">高血压</a></dd>
+                                    <dd><a href="">烘焙</a></dd>
+                                    <dd><a href="">韩国料理</a></dd>
+                                    <dd><a href="">川菜</a></dd>
+                                    <dd><a href="">粤菜</a></dd>
+                                    <dd><a href="">湘菜</a></dd>
+                                    <dd><a href="">甜点</a></dd>
+                                    <dd><a href="">进入菜谱大全 >></a></dd>
 
-                    </dl>
-                </li>
+                                </dl>
+                            </li>
 
-            </ul>
+                        </ul>
+                    </div>
+                    <div class="cookbook_con-item clearfix">
+                        <section class="title-h3">
+                            <h3>每小时最热门菜谱</h3>
+                        </section>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_1.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
 
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_2.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_3.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_4.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_5.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_6.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_2_7.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>热门栏目推荐</dt>
+                                    <dd><a href="">最新菜谱</a></dd>
+                                    <dd><a href="">家常菜</a></dd>
+                                    <dd><a href="">凉菜</a></dd>
+                                    <dd><a href="">素食</a></dd>
+                                    <dd><a href="">早餐</a></dd>
+                                    <dd><a href="">乌发</a></dd>
+                                    <dd><a href="">高血压</a></dd>
+                                    <dd><a href="">烘焙</a></dd>
+                                    <dd><a href="">韩国料理</a></dd>
+                                    <dd><a href="">川菜</a></dd>
+                                    <dd><a href="">粤菜</a></dd>
+                                    <dd><a href="">湘菜</a></dd>
+                                    <dd><a href="">甜点</a></dd>
+                                    <dd><a href="">进入菜谱大全 >></a></dd>
+
+                                </dl>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="cookbook_con-item clearfix">
+                        <section class="title-h3">
+                            <h3>一周热门菜谱推荐</h3>
+                        </section>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_1.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳3</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_2.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_3.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_4.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_5.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_6.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down ">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a class="cookbook-img-link" href="#">
+                                        <img src="images/cookbook/cook_3_7.jpg" alt="鸡米花"/>
+                                    </a>
+                                    <figcaption>
+                                        <div class="toggle-up">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+                                        <div class="toggle-down">
+                                            <strong>木耳</strong>
+
+                                            <p><span class="discuss">145</span>评论&nbsp<span
+                                                    class="popularity">1132</span>人气
+                                            </p>
+                                            <span class="respan">静默成诗</span>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>热门栏目推荐</dt>
+                                    <dd><a href="">最新菜谱</a></dd>
+                                    <dd><a href="">家常菜</a></dd>
+                                    <dd><a href="">凉菜</a></dd>
+                                    <dd><a href="">素食</a></dd>
+                                    <dd><a href="">早餐</a></dd>
+                                    <dd><a href="">乌发</a></dd>
+                                    <dd><a href="">高血压</a></dd>
+                                    <dd><a href="">烘焙</a></dd>
+                                    <dd><a href="">韩国料理</a></dd>
+                                    <dd><a href="">川菜</a></dd>
+                                    <dd><a href="">粤菜</a></dd>
+                                    <dd><a href="">湘菜</a></dd>
+                                    <dd><a href="">甜点</a></dd>
+                                    <dd><a href="">进入菜谱大全 >></a></dd>
+
+                                </dl>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="cookbook_con-item clearfix">
-            <section class="title-h3">
-                <h3>一周热门菜谱推荐</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
 
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_2.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>热门栏目推荐</dt>
-                        <dd><a href="">最新菜谱</a></dd>
-                        <dd><a href="">家常菜</a></dd>
-                        <dd><a href="">凉菜</a></dd>
-                        <dd><a href="">素食</a></dd>
-                        <dd><a href="">早餐</a></dd>
-                        <dd><a href="">乌发</a></dd>
-                        <dd><a href="">高血压</a></dd>
-                        <dd><a href="">烘焙</a></dd>
-                        <dd><a href="">韩国料理</a></dd>
-                        <dd><a href="">川菜</a></dd>
-                        <dd><a href="">粤菜</a></dd>
-                        <dd><a href="">湘菜</a></dd>
-                        <dd><a href="">甜点</a></dd>
-                        <dd><a href="">进入菜谱大全 >></a></dd>
-
-                    </dl>
-                </li>
-
-            </ul>
-
-        </div>
-        <div class="cookbook_con-item clearfix">
-            <section class="title-h3">
-                <h3>一周热门菜谱推荐</h3><a href="#">更多菜单></a>
-            </section>
-            <ul>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳3</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down ">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a class="cookbook-img-link" href="#">
-                            <img src="images/index/cookbook_3.jpg" alt="鸡米花"/>
-                        </a>
-                        <figcaption>
-                            <div class="toggle-up">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-                            <div class="toggle-down">
-                                <strong>木耳</strong>
-
-                                <p><span class="discuss">145</span>评论&nbsp<span class="popularity">1132</span>人气</p>
-                                <span class="respan">静默成诗</span>
-                            </div>
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>热门栏目推荐</dt>
-                        <dd><a href="">最新菜谱</a></dd>
-                        <dd><a href="">家常菜</a></dd>
-                        <dd><a href="">凉菜</a></dd>
-                        <dd><a href="">素食</a></dd>
-                        <dd><a href="">早餐</a></dd>
-                        <dd><a href="">乌发</a></dd>
-                        <dd><a href="">高血压</a></dd>
-                        <dd><a href="">烘焙</a></dd>
-                        <dd><a href="">韩国料理</a></dd>
-                        <dd><a href="">川菜</a></dd>
-                        <dd><a href="">粤菜</a></dd>
-                        <dd><a href="">湘菜</a></dd>
-                        <dd><a href="">甜点</a></dd>
-                        <dd><a href="">进入菜谱大全 >></a></dd>
-
-                    </dl>
-                </li>
-
-            </ul>
-
-        </div>
 
         <div class="btn_pre cookbook_btn_pre">
         </div>
@@ -1494,16 +1834,7 @@
     </div>
 
 </article>
-<article class="news">
-    <div class="center ">
-        <section class="title-h3">
-            <h3>健康新闻</h3><a href="#">更多健康资讯></a>
-        </section>
-        <div class="news_con clearfix">
-           
-        </div>
 
-</article>
 
 <footer class="clearfix">
     <div class="center foot-container">

@@ -4,6 +4,17 @@ body{
     overflow-x:hidden;
     text-align: center;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 14px;
+    font-family: "微软雅黑",sans-serif;
+}
+header,nav,section,article,footer,aside{
+    display: block;
+}
 /*header*/
 header, .header-container, .search, .logo, .login-list {
     height: 130px;
@@ -184,6 +195,7 @@ footer {
 .friend-links{
     border-bottom: 1px solid #444;
     padding: 5px 0;
+    text-align: left;
 
 }
 .friend-links dt{
@@ -302,7 +314,7 @@ nav .center{
     width: 990px;
     height: 280px;
     background-color: #FAFAFA;
-    z-index: 100;
+    z-index: 1000;
     text-align: left;
 }
 .stretch dl{
