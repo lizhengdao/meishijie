@@ -8,10 +8,10 @@ $(function () {
 //设置导航聚焦出现子菜单
 function setNavStretchDisplay() {
     $(".nav-list>li").mouseover(function () {
-        $(this).find(".caret").css("display", "none");
+        $(this).find(".flag i").css("display", "none");
         $(this).find(".stretch").css("display", "block");
     }).mouseout(function () {
-        $(this).find(".caret").css("display", "inline-block");
+        $(this).find(".flag i").css("display", "inline-block");
         $(this).find(".stretch").css("display", "none");
     })
 };

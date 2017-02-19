@@ -21,9 +21,11 @@ header, .header-container, .search, .logo, .login-list {
 }
 
 header {
+    background:#D81517;
     background: -moz-linear-gradient(left, #D81517, #A0000D);
     background: -o-linear-gradient(left, #D81517, #A0000D);
     background: -webkit-linear-gradient(left, #D81517, #A0000D);
+    background: -ms-linear-gradient(left, #D81517, #A0000D);
     background: linear-gradient(left, #D81517, #A0000D);
 }
 
@@ -37,7 +39,7 @@ header {
     float: left;
     display: inline-block;
     width: 239px;
-    background: url("../images/base/logo2.png") no-repeat center;
+    background: url("../img/base/logo2.png") no-repeat center;
 }
 
 .search {
@@ -52,7 +54,13 @@ header {
     top: 50%;
     margin-top: -18px;
     border: 1px solid white;
+    -webkit-border: 1px solid white;
+    -o-border: 1px solid white;
+    -moz-border: 1px solid white;
+    -ms-border: 1px solid white;
+
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .search input {
@@ -64,6 +72,10 @@ header {
     background-color: #D61417;
     color: white;
     letter-spacing: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .search button:hover {
@@ -94,19 +106,20 @@ header {
     background-color: #5D0000;
 }
 
-.login-list .link img {
+.login-list .link i {
     display: inline-block;
     height: 28px;
     width: 28px;
+    vertical-align: middle;
 }
 
-.link-qq img {
+.link-qq i {
 
-    background: url("../images/base/topdsflogin_icon.gif") no-repeat;
+    background: url("../img/base/topdsflogin_icon.gif") no-repeat 0 -1px;
 }
 
-.link-weibo img {
-    background: url("../images/base/topdsflogin_icon.gif") no-repeat 0 -28px;
+.link-weibo i {
+    background: url("../img/base/topdsflogin_icon.gif") no-repeat 0 -28px;
 }
 
 /*footer*/
@@ -118,10 +131,11 @@ footer {
     padding: 10px 0;
     width: 100%;
     background-color: #3F3A32;
+
 }
 
 .foot-container {
-    background: url("../images/base/logo_f.png") no-repeat top left;
+    background: url("../img/base/logo_f.png") no-repeat top left;
 }
 .foot-container .text {
     float: left;
@@ -171,18 +185,18 @@ footer {
     color: white;
 }
 .link-weibo .l-img{
-    background: url("../images/base/footerlinks.png");
+    background: url("../img/base/footerlinks.png");
 }
 .link-quezone .l-img{
-     background: url("../images/base/footerlinks.png") -105px 0;
+     background: url("../img/base/footerlinks.png") -105px 0;
 
  }
 .link-wechat .l-img{
-    background: url("../images/base/footerlinks.png") 210px 0px;
+    background: url("../img/base/footerlinks.png") 210px 0px;
 
 }
 .link-app .l-img{
-    background: url("../images/base/footerlinks.png") 105px 0;
+    background: url("../img/base/footerlinks.png") 105px 0;
 
 }
 .footer-con1{
@@ -281,10 +295,20 @@ nav{
     text-decoration: none;
     position: relative;
 }
-.nav-list .caret{
-    position: absolute;
-    right: -10px;
-    top: 38px;
+.nav-list .flag{
+    vertical-align: middle;
+    margin-left: 5px;
+
+}
+.nav-list .flag,.nav-list .flag i{
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+}
+.nav-list .flag i{
+
+    vertical-align: top;
+    background: url("../img/list_style1_icons.png") 0 0 no-repeat ;
 }
 .nav-list .active>a{
     border-bottom: 4px solid red;
@@ -297,7 +321,7 @@ nav{
     display: inline-block;
     height: 23px;
     width: 24px;
-    background: url("../images/base/furniture.png") no-repeat;
+    background: url("../img/base/furniture.png") no-repeat;
     position: absolute;
     top: 10px;
     right: -12px;
@@ -369,10 +393,10 @@ nav .center{
 #nav-menu .stretch-img{
     height: 226px;
     width: 406px;
-    background: url("../images/base/jccp_navbgg.png");
+    background: url("../img/base/jccp_navbgg.png");
 }
 #nav-health .stretch-img{
     height: 208px;
     width: 325px;
-    background: url("../images/base/ysjk_navbg.png");
+    background: url("../img/base/ysjk_navbg.png");
 }

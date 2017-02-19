@@ -7,18 +7,25 @@
           content="美食,美食网,菜谱,菜谱网,美食地图,食谱,食谱网,特色食谱,特色美食,美食大全家常菜谱,菜谱大全,美食网站,特色菜谱,最新菜谱,美食分享,美食加盟,人气美食,菜谱分享,餐饮加盟,特色小吃,美食文化">
     <meta name="description"
           content="美食杰 - 中国最优质的美食，食谱，菜谱网。做你最喜爱的美食网，菜谱网。提供最人性化的菜谱大全,食谱家常菜，家常菜谱大全的美食网,让人们在宣泄的都市中体验在家常做菜,享受美食的乐趣.找家常菜谱,上美食杰菜谱美食网">
-    <meta name="author" content="nongweiyi">
+    <meta name="author" content="农韦依,Maggie">
     <meta name="viewport" content="width:device-width">
-    <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="mylibs/common.css">
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <script src="libs/jquery-3.1.1.js"></script>
-    <script src="script/base.js"></script>
-    <script src="script/index.js"></script>
+
 </head>
 <body>
+<!--版本过低的内容提示-->
+<!--[if lte IE 8]>
+<p style="font-size: 16px">检测到您的浏览器版本过低，为了获得更好的体验，请您使用最新的浏览器访问本网站，也可 <a href="http://browsehappy.com/">点击这里</a>下载最新浏览器</p>
+<script src="vendor/html5shiv.min.js"></script>
+
+<![endif]-->
+<noscript>检测到您的浏览器不支持或未启用JavaScript！为获得更好的体验请先启用后刷新页面。</noscript>
+
+<!--头部-->
 <header>
     <div class="center header-container">
         <a class="logo" href="#"></a>
@@ -27,8 +34,8 @@
             <ul>
                 <li><a href="#">注册</a></li>
                 <li><a href="#">登录</a></li>
-                <li><a class="link link-weibo" href="#"><img/>微博登录</a></li>
-                <li><a class="link link-qq" href="#"><img/>QQ登录</a></li>
+                <li><a class="link link-weibo" href="#"><i></i>微博登录</a></li>
+                <li><a class="link link-qq" href="#"><i></i>QQ登录</a></li>
             </ul>
 
         </div>
@@ -48,11 +55,12 @@
     </div>
 
 </header>
+<!--导航-->
 <nav>
     <div class="center ">
         <ul class="nav-list clearfix">
             <li class="active"><a href="#">首页</a></li>
-            <li id="nav-menu"><a href="#">菜谱大全<span class="caret"></span></a>
+            <li id="nav-menu"><a href="#">菜谱大全<sapn class="flag"><i></i></sapn></a>
 
                 <div class="stretch clearfix">
                     <dl class="clearfix">
@@ -129,7 +137,7 @@
 
                 </div>
             </li>
-            <li id="nav-health"><a href="#">饮食健康<span class="caret"></span></a>
+            <li id="nav-health"><a href="#">饮食健康</a><p class="flag"><i></i></p>
 
                 <div class="stretch clearfix">
                     <dl class="clearfix">
@@ -204,6 +212,7 @@
         </ul>
     </div>
 </nav>
+<!--推荐-->
 <article class="recommend clearfix">
     <div class="top-mark clearfix">
         <div class="pull-left mark-c left"></div>
@@ -257,7 +266,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/breakfast01.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/breakfast01.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -270,7 +279,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/breakfast02.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/breakfast02.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -283,7 +292,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/breakfast03.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/breakfast03.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -298,14 +307,14 @@
 
                 </div>
                 <div class="con-item clearfix center">
-                    <div class="con-item-title">
+                    <div class="con-item-title first-show">
                         <h3>今日午餐推荐：下饭菜主打周末午餐</h3>
                     </div>
                     <ul class="con-list">
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/lunch01.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/lunch01.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -318,7 +327,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/lunch02.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/lunch02.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -331,7 +340,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/lunch03.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/lunch03.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -353,7 +362,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/after01.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/after01.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -366,7 +375,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/after02.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/after02.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -379,7 +388,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/after03.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/after03.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -402,7 +411,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/dinner01.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/dinner01.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -415,7 +424,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/dinner02.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/dinner02.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -428,7 +437,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/dinner03.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/dinner03.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -450,7 +459,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/supper01.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/supper01.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -463,7 +472,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/supper02.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/supper02.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -476,7 +485,7 @@
                         <li>
                             <figure>
                                 <a class="recon-img-link" href="#">
-                                    <img src="images/recom/supper03.jpg" alt="鸡米花"/>
+                                    <img src="img/recom/supper03.jpg" alt="鸡米花"/>
                                 </a>
                                 <figcaption>
                                     <a href="#">鸡米花</a>
@@ -498,6 +507,7 @@
 
 
 </article>
+<!--菜单-->
 <article class="raiders clearfix">
     <section class="title-h3 center clearfix">
         <h3>2月，冬去春来要养阳</h3><a href="#">更多菜单></a>
@@ -512,7 +522,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_1.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_1.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -526,7 +536,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_2.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_2.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -540,7 +550,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_3.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_3.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -554,7 +564,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_4.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_4.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -568,7 +578,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_5.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_5.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -582,7 +592,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_1_6.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_1_6.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -604,7 +614,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_1.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_1.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -618,7 +628,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_2.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_2.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -632,7 +642,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_3.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_3.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -646,7 +656,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_4.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_4.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -660,7 +670,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_5.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_5.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -674,7 +684,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_2_6.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_2_6.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -695,7 +705,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_1.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_1.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -709,7 +719,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_2.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_2.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -723,7 +733,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_3.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_3.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -737,7 +747,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_4.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_4.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -751,7 +761,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_5.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_5.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -765,7 +775,7 @@
                             <li>
                                 <figure>
                                     <a class="raiers-img-link" href="#">
-                                        <img src="images/raiders/raiders_3_6.jpg" alt="鸡米花"/>
+                                        <img src="img/raiders/raiders_3_6.jpg" alt="鸡米花"/>
                                         <span></span>
                                     </a>
                                     <figcaption>
@@ -802,6 +812,7 @@
     </div>
 
 </article>
+<!--食材-->
 <article class="ingredients clearfix">
     <div class="center clearfix">
         <section class="title-h3">
@@ -821,7 +832,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits1.jpg" alt=""/>
+                                <img src="img/ingredients/fruits1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -832,7 +843,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits2.jpg" alt=""/>
+                                <img src="img/ingredients/fruits2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -843,7 +854,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits3.jpg" alt=""/>
+                                <img src="img/ingredients/fruits3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -854,7 +865,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits4.jpg" alt=""/>
+                                <img src="img/ingredients/fruits4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -865,7 +876,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits5.jpg" alt=""/>
+                                <img src="img/ingredients/fruits5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -876,7 +887,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits6.jpg" alt=""/>
+                                <img src="img/ingredients/fruits6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -887,7 +898,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fruits7.jpg" alt=""/>
+                                <img src="img/ingredients/fruits7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -898,97 +909,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/index/ingredients_2.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg1.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg2.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg3.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg4.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg5.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg6.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg7.jpg" alt=""/>
-                            </a>
-                            <figcaption>
-                                <em></em>
-                                <a class="sm-link" href="#">藕</a>
-                            </figcaption>
-                        </figure>
-                        </a></li>
-                    <li>
-                        <figure>
-                            <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/veg8.jpg" alt=""/>
+                                <img src="img/index/ingredients_2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1001,7 +922,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain1.jpg" alt=""/>
+                                <img src="img/ingredients/veg1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1012,7 +933,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain2.jpg" alt=""/>
+                                <img src="img/ingredients/veg2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1023,7 +944,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain3.jpg" alt=""/>
+                                <img src="img/ingredients/veg3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1034,7 +955,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain4.jpg" alt=""/>
+                                <img src="img/ingredients/veg4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1045,7 +966,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain5.jpg" alt=""/>
+                                <img src="img/ingredients/veg5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1056,7 +977,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain6.jpg" alt=""/>
+                                <img src="img/ingredients/veg6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1067,7 +988,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain7.jpg" alt=""/>
+                                <img src="img/ingredients/veg7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1078,7 +999,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/grain8.jpg" alt=""/>
+                                <img src="img/ingredients/veg8.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1091,7 +1012,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh1.jpg" alt=""/>
+                                <img src="img/ingredients/grain1.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1102,7 +1023,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh2.jpg" alt=""/>
+                                <img src="img/ingredients/grain2.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1113,7 +1034,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh3.jpg" alt=""/>
+                                <img src="img/ingredients/grain3.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1124,7 +1045,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh4.jpg" alt=""/>
+                                <img src="img/ingredients/grain4.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1135,7 +1056,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh5.jpg" alt=""/>
+                                <img src="img/ingredients/grain5.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1146,7 +1067,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh6.jpg" alt=""/>
+                                <img src="img/ingredients/grain6.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1157,7 +1078,7 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh7.jpg" alt=""/>
+                                <img src="img/ingredients/grain7.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1168,7 +1089,97 @@
                     <li>
                         <figure>
                             <a class="ingredients-con-a" href="#">
-                                <img src="images/ingredients/fresh8.jpg" alt=""/>
+                                <img src="img/ingredients/grain8.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh1.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh2.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh3.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh4.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh5.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh6.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh7.jpg" alt=""/>
+                            </a>
+                            <figcaption>
+                                <em></em>
+                                <a class="sm-link" href="#">藕</a>
+                            </figcaption>
+                        </figure>
+                        </a></li>
+                    <li>
+                        <figure>
+                            <a class="ingredients-con-a" href="#">
+                                <img src="img/ingredients/fresh8.jpg" alt=""/>
                             </a>
                             <figcaption>
                                 <em></em>
@@ -1183,6 +1194,7 @@
     </div>
 
 </article>
+<!--菜谱-->
 <article class="cookbook clearfix">
     <div class="center cookbook-con clearfix">
         <div class="con-middle">
@@ -1196,11 +1208,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_1.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_1.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳1</strong>
+                                            <strong>芒果西米露1</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1208,12 +1220,7 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
-
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
                                         </div>
 
                                     </figcaption>
@@ -1222,11 +1229,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_2.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_2.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1234,12 +1241,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1248,11 +1251,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_3.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_3.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1260,12 +1263,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1274,11 +1273,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_4.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_4.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1286,12 +1285,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1300,11 +1295,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_5.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_5.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1312,12 +1307,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1326,11 +1317,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_6.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_6.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1338,12 +1329,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1352,11 +1339,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_1_7.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_1_7.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1364,12 +1351,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1406,11 +1389,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_1.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_1.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1418,12 +1401,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1432,11 +1411,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_2.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_2.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1444,12 +1423,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1458,11 +1433,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_3.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_3.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1470,12 +1445,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1484,11 +1455,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_4.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_4.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1496,12 +1467,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1510,11 +1477,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_5.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_5.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1522,12 +1489,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1536,11 +1499,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_6.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_6.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1548,12 +1511,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1562,11 +1521,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_2_7.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_2_7.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1574,12 +1533,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1617,11 +1572,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_1.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_1.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳3</strong>
+                                            <strong>芒果西米露3</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1629,12 +1584,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1643,11 +1594,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_2.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_2.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1655,12 +1606,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1669,11 +1616,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_3.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_3.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1681,12 +1628,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1695,11 +1638,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_4.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_4.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1707,12 +1650,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1721,11 +1660,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_5.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_5.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1733,12 +1672,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1747,11 +1682,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_6.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_6.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1759,12 +1694,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down ">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1773,11 +1704,11 @@
                             <li>
                                 <figure>
                                     <a class="cookbook-img-link" href="#">
-                                        <img src="images/cookbook/cook_3_7.jpg" alt="鸡米花"/>
+                                        <img src="img/cookbook/cook_3_7.jpg" alt="鸡米花"/>
                                     </a>
                                     <figcaption>
                                         <div class="toggle-up">
-                                            <strong>木耳</strong>
+                                            <strong>芒果西米露</strong>
 
                                             <p><span class="discuss">145</span>评论&nbsp<span
                                                     class="popularity">1132</span>人气
@@ -1785,12 +1716,8 @@
                                             <span class="respan">静默成诗</span>
                                         </div>
                                         <div class="toggle-down">
-                                            <strong>木耳</strong>
+                                            <ul><li class="li1"><i></i>8步 / 大概30分钟</li><li class="li2"><i></i>炒 / 香辣味</li></ul>
 
-                                            <p><span class="discuss">145</span>评论&nbsp<span
-                                                    class="popularity">1132</span>人气
-                                            </p>
-                                            <span class="respan">静默成诗</span>
                                         </div>
 
                                     </figcaption>
@@ -1835,7 +1762,7 @@
 
 </article>
 
-
+<!--页脚-->
 <footer class="clearfix">
     <div class="center foot-container">
         <div class="footer-con1 clearfix">
@@ -1942,6 +1869,8 @@
     </div>
 </footer>
 
-
+<script src="vendor/jquery-3.1.1.js"></script>
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

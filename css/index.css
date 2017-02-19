@@ -20,6 +20,9 @@ article {
     line-height: 116px;
     height: 116px;
 }
+.recommend .first-show h3{
+    display: block;
+}
 .recommend {
 
     width: 990px;
@@ -91,7 +94,7 @@ article {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background: url("../images/index/white80.png") repeat;
+    background: url("../img/index/white80.png") repeat;
 }
 
 .recommend-con figcaption > a, .raiers-con-item figcaption > a {
@@ -125,7 +128,7 @@ article {
     display: inline-block;
     height: 6px;
     width: 6px;
-    background: url("../images/index/gxarrow1.png") no-repeat;
+    background: url("../img/index/gxarrow1.png") no-repeat;
     top: 0;
     right: -6px;
 }
@@ -190,7 +193,7 @@ article {
 .ruler {
     width: 100%;
     height: 50px;
-    background: url("../images/index/kedulong.gif") repeat-x;
+    background: url("../img/index/kedulong.gif") repeat-x;
 
 }
 
@@ -269,10 +272,9 @@ article {
     position: absolute;
     top: 50%;
     margin-top: -36px;
-    background: url("../images/index/zzw_bg.png") ;
+    background: url("../img/index/zzw_bg.png") ;
     /*cursor: pointer;*/
     display: none;
-    /*background: red;*/
 
 }
 .recommend .rec-btn-prev{
@@ -333,7 +335,7 @@ article {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background: url("../images/index/ztfixer.gif") no-repeat;
+    background: url("../img/index/ztfixer.gif") no-repeat;
 }
 
 .raiers-con-item {
@@ -394,26 +396,29 @@ article {
     background-color: #2b542c;
     position: absolute;
     top: 50%;
-    margin-top: -65px;
+    margin-top: -70px;
 
+}
+.cookbook .btn_pre, .cookbook .btn_next{
+    margin-top: -10px;
 }
 
 .btn_pre {
     left: -130px;
-    background: url("../images/index/index_arrow.gif") 0px 0px no-repeat;
+    background: url("../img/index/index_arrow.gif") 0px 0px no-repeat;
 }
 
 .btn_pre:hover {
-    background: url("../images/index/index_arrow.gif") -130px 0px no-repeat;
+    background: url("../img/index/index_arrow.gif") -130px 0px no-repeat;
 }
 
 .btn_next {
     right: -130px;
-    background: url("../images/index/index_arrow.gif") 0px -130px no-repeat;
+    background: url("../img/index/index_arrow.gif") 0px -130px no-repeat;
 }
 
 .btn_next:hover {
-    background: url("../images/index/index_arrow.gif") -130px -130px no-repeat;
+    background: url("../img/index/index_arrow.gif") -130px -130px no-repeat;
 
 }
 
@@ -465,7 +470,7 @@ article {
     height: 28px;
     position: absolute;
     bottom: 0;
-    background: url("../images/index/white70.png") repeat;
+    background: url("../img/index/white70.png") repeat;
     width: 118px;
     line-height: 28px;
     left: 0;
@@ -492,7 +497,7 @@ article {
 
 /*cookbook---菜谱*/
 .cookbook{
-    margin: 45px 0;
+    margin: 45px 0 100px 0;
 }
 
 .cookbook-con {
@@ -539,7 +544,29 @@ article {
 .toggle-down {
     background-color: #EEEEEE;
 }
+.toggle-down ul li{
+    text-align: left;
+    font-size: 14px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+.toggle-down ul li i{
+    display: inline-block;
+    height: 30px;
+    width: 20px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.toggle-down .li1 i{
 
+    background: url("../img/list_style1_icons.png") -10px -128px no-repeat;
+}
+.toggle-down .li2 i{
+
+    background: url("../img/list_style1_icons.png") -10px -168px no-repeat;
+}
 .cookbook_con-item figcaption strong {
     font-size: 16px;
 }
@@ -570,7 +597,7 @@ article {
     float: left;
 }
 .cookbook-img-link img{
-    height: 100%;
+    height: 227.5px;
     width: 100%;
 }
 

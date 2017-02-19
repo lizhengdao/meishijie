@@ -91,6 +91,7 @@ function raidersSlideLeft() {
 /*-----------------------推荐部分-------------------------*/
 //推荐前后按钮监听
 function recomBtnListner() {
+
     //按钮点击事件绑定
     var index = 0;
     $(".recommend .rec-btn-prev").click(function () {
@@ -165,12 +166,6 @@ function setScaleHoverListner($last) {
 
 //设置推荐部分的按钮背景
 function setBtnBg(object, index, isNext) {
-    //var $timePrompt = $(".time-prompt li").eq(index);
-    //$timePrompt.children("span").css({
-    //    "display": "block"
-    //});
-    //$timePrompt.css("border-top", "3px solid red");
-
     var $this = $(object);
     var positionY = 0, positionX = 0;
     switch (index) {
@@ -212,10 +207,15 @@ function hideRecomTitle() {
 //鼠标上移开关效果
 function cookBookHover() {
     var $li = $(".cookbook_con-item li");
-    $li.mouseover(function () {
-        $(this).find(".toggle-up").slideUp();
+    $li.mouseenter(function () {
+        $(this).find(".toggle-up").animate({"margin-top":"-100px"},300);
+        //$.preventDefault();
+
     }).mouseleave(function () {
-        $(this).find(".toggle-up").slideDown();
+        $(this).find(".toggle-up").animate({"margin-top":"0"},300);
+        //event.defaultPrevented;
+
+        //$(this).find(".toggle-up").slideDown();
     });
 }
 
